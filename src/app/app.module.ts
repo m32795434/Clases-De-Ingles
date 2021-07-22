@@ -10,6 +10,9 @@ import { ClassesComponent } from './pages/classes/classes.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LogTitleComponent } from './components/log-title/log-title.component';
+import { SearchformComponent } from './components/searchform/searchform.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeComponent } from './pages/home/home.component';
     ClassesComponent,
     ResourcesComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    LogTitleComponent,
+    SearchformComponent
   ],
   imports: [
     BrowserModule,
