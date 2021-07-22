@@ -7,3 +7,15 @@
     align-items: flex-end;
     height: auto;
     }
+.searchBot{
+    display: none;
+}
+
+@media (max-width:640px){
+    .searchTop{
+display: none;
+    }
+    .searchBot{
+        display: block;
+    }
+}

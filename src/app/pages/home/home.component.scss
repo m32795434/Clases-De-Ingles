@@ -1,0 +1,65 @@
+main {
+    background-color: white;
+    margin-bottom: 40px;
+}
+/*----------------------------------------------SCROLL------------------------------*/
+#block-img1 {
+    /*position: 0%left, 0% top/background-attachment:fixed;/
+    background-image:url(01.jpeg);// podría tmb definir valores para 
+background-clip/background-color/background-origin/background-repeat*/
+    background: url(/assets/images/01.jpg) fixed;
+    background-size:cover;
+    height: 100vw;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+#block-img2{
+    background: url(/assets/images/02.jpg) fixed;
+    background-size: cover;
+    height: 100vw;
+    width: 100%;
+}
+
+
+#block-img3{
+    background: url(/assets/images/03.jpg) fixed;
+    background-size: cover;
+    height: 100vw;
+    width: 100%;
+}
+
+.block1{/*para divs padres que contienen los div hijos, con h2 y p, asi puedo 
+    hacerle padding, desde el div hijo*/
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10vw;
+
+}
+
+
+.text {/*para el div hijo, de la clase de abajo*/
+    color: white;
+    text-align: center;
+    padding: 10vw;
+    font-size: 25px;
+}
+
+.text h1{
+    color: burlywood;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: rgba(0,0,0);
+    opacity: 80%;
+    }
+
+.text h2{
+    color: burlywood;
+    font-size: 53px;
+    text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
+    margin-top: 0;
+    opacity: 80%;
+    }
+
+/*-------------------------------------------END SCROLL-------------------------*/   

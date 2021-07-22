@@ -1,0 +1,49 @@
+footer {
+    border: double thick rgb(3, 3, 3);
+    height: auto;
+    display: grid;
+    grid-template: auto / 40% 20% 40%;
+    box-sizing: border-box;
+    }
+.footer-copy{
+    color: white;
+    font-size: 20px;
+    }
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-contact a, .footer-follow p{
+    /* text-align: center; ya heredada para ambos elementos*/
+    color: white;
+    font-size: 20px;
+    font-family: serif;
+    margin: 0 0 .5vw 0;
+}
+.footer-contact a:hover{
+    border: 1px solid white;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.follow-facebook, .follow-linkedin{
+    border-radius: 12px;
+}
+.footer-follow img{
+width: 40px;
+height: auto;
+}
+
+.footer-credits{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    font-size: 8px;
+}
+.footer-credits p {
+    margin: 1% 0 0 2%;
+    font-size: 21px;
+    font-family: "Dancing Script", cursive;
+}
