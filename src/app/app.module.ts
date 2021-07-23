@@ -14,6 +14,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogTitleComponent } from './components/log-title/log-title.component';
 import { SearchformComponent } from './components/searchform/searchform.component';
+import { BlockDataComponent } from './components/block-data/block-data.component';
+import { BlockTitleComponent } from './components/block-title/block-title.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SearchformComponent } from './components/searchform/searchform.componen
     HomeComponent,
     HeaderComponent,
     LogTitleComponent,
-    SearchformComponent
+    SearchformComponent,
+    BlockDataComponent,
+    BlockTitleComponent
   ],
   imports: [
     BrowserModule,
