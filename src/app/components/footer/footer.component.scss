@@ -1,18 +1,21 @@
 footer {
     border-top: double thick var(--rosa);
-    height: 20vw;
+    height: auto;
     display: grid;
-    grid-template: auto / auto auto auto;
-    box-sizing: border-box;
+    grid-template: auto / 32% 2% 32% 2% 32%;
+    //box-sizing: border-box;
     background-color: var(--azul);
     }
 .footer-copy-contact{
     color: white;
     display: grid;
-    grid-template:20% 80% / auto;
+    grid-template:20% 40% 20% 20% / auto;
     text-align: center;
     align-items: center;
-    
+    & h2{
+        font-size: 25px;
+        font-family: serif;
+    }
     
     & a{
         color: white;
@@ -31,6 +34,14 @@ footer {
     & p{
 font-size: 20px;
     }
+}
+.contact-data{
+    list-style: none;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
 }
 .footer-follow{
     text-align: center;
@@ -70,6 +81,15 @@ font-size: 20px;
     }
     & h2{
         font-size: 25px;
-        
+        font-family: serif;
+        font-weight: 400;
     }
+}
+.borde1{
+    border-right: 1px solid var(--rosa);
+    margin: 40px 0 40px 0;
+}
+.borde2{
+    border-left: 1px solid var(--rosa);
+    margin: 40px 0 40px 0;
 }
