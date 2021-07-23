@@ -1,49 +1,75 @@
 footer {
-    border: double thick rgb(3, 3, 3);
-    height: auto;
+    border-top: double thick var(--rosa);
+    height: 20vw;
     display: grid;
-    grid-template: auto / 40% 20% 40%;
+    grid-template: auto / auto auto auto;
     box-sizing: border-box;
+    background-color: var(--azul);
     }
-.footer-copy{
+.footer-copy-contact{
     color: white;
-    font-size: 20px;
-    }
-
-.footer-contact{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template:20% 80% / auto;
     text-align: center;
+    align-items: center;
+    
+    
+    & a{
+        color: white;
+        display: block;
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+
+       &:hover{
+        border: 4px solid white;
+        font-size: 27px;
+        border-radius: 30px;
+        padding: 3px;
+       }
+    }
+    & p{
+font-size: 20px;
+    }
 }
-.footer-contact a, .footer-follow p{
-    /* text-align: center; ya heredada para ambos elementos*/
-    color: white;
-    font-size: 20px;
-    font-family: serif;
-    margin: 0 0 .5vw 0;
-}
-.footer-contact a:hover{
-    border: 1px solid white;
-    font-size: 25px;
-    border-radius: 5px;
-}
-.follow-facebook, .follow-linkedin{
-    border-radius: 12px;
-}
-.footer-follow img{
-width: 40px;
-height: auto;
+.footer-follow{
+    text-align: center;
+    display: grid;
+    grid-template: 20% 80% / auto;
+    align-items: center;
+        
+    & p{
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+    }
+    & img{
+        width: 60px;
+        height: auto;
+        border-radius: 14px;
+        &:hover{
+            border: 4px solid white;
+        }
+    }
+    & div{
+        display: flex;
+        justify-content:space-around;
+    }
 }
 
 .footer-credits{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    text-align: center;
+    display: grid;
+    grid-template: 20% 80% / auto;
+    align-items: center;
     color: white;
-    font-size: 8px;
-}
-.footer-credits p {
-    margin: 1% 0 0 2%;
-    font-size: 21px;
-    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    & p{
+        font-size: 20px;
+        font-family: "Dancing Script", cursive;
+    }
+    & h2{
+        font-size: 25px;
+        
+    }
 }

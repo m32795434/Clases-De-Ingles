@@ -1,3 +1,43 @@
+/* ------------------------ screen readers only ----------------------*/
+.sr-only {
+    position: absolute!important;
+    height: 1px;
+    width:  1px;
+    overflow: hidden;
+    /* clip solo para position absolute o fixed*/
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    
+ }
+ .sr-only:focus {
+    display: block;
+    height: 40px;
+    width:  25%;
+    position: relative;
+    top: 0;
+    left: 0;
+    clip: auto;
+    //border-radius: 30px;
+    text-decoration: none;
+    background-color: #0AA883;
+    padding: 0 0 15px 0;
+    
+    
+ }
+ .sr-only:hover {
+    text-decoration: underline;
+ 
+ }
+ .skiptext{
+    font: 20px arial;
+    text-align: center;
+    //align-self: center;
+    color: black;
+    //flex-grow: 1;
+ 
+ }
+ /* ------------------------END screen readers only ----------------------*/
 
 .log-title-srch{/*FLEX CONTENEDOR DEL LOGO, TIT, Y FORM SEARCH*/
     background: linear-gradient(.25turn, var(--azul)70%, white);
