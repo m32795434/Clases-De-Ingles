@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-block-data',
@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class BlockDataComponent implements OnInit {
 
   constructor() { }
+
+  @Input() blockTitle?: string;
+  @Input() blockText?: string;
+  
+   
 
   ngOnInit(): void {
   }

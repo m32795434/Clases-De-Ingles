@@ -1,0 +1,14 @@
+.block{
+    text-align: center;
+    padding: 5vw 30vw 5vw 30vw;
+    
+    & h1{
+        color: burlywood;
+        font-size: 48px;
+        text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
+        margin-top: 0;
+        border-radius: 5px;
+        background-color: black;
+        opacity: 90%;
+        }
+}

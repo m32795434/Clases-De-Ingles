@@ -1,0 +1,17 @@
+.block{
+    background-color: rgba(0, 0, 0, 0.7);
+    //margin-bottom: 10vw;
+
+}.text {
+    color: white;
+    text-align: center;
+    padding: 5vw;
+    font-size: 25px;
+    & h2{
+    color: burlywood;
+    font-size: 53px;
+    text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
+    margin-top: 0;
+    opacity: 80%;
+    }
+}

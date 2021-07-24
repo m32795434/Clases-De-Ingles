@@ -1,1 +1,15 @@
-<p>resources works!</p>
+<main id="main"> 
+    <div id="block-img1" data-speed="1">
+        <app-block-title 
+        [title]="title"
+        ></app-block-title>
+        <div class="container">
+            
+            <app-block-data
+            *ngFor="let block of blocks"
+            [blockTitle]="block.title"
+            [blockText]="block.text"
+            ></app-block-data>
+        </div>
+    </div>
+</main>
