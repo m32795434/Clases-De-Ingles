@@ -1,64 +1,73 @@
 /*---------------------------CONTACT------------------------------------------------*/
-#contact-block-img2{
+main{
+    margin-bottom: 40px;
+}
+.block-img{
     background: url(/assets/images/02.jpg) fixed;
     background-size: cover;
-    height: 80vw;
+    height: 100%;
     width: 100%;
 }
-
-.contact-text {
-    text-align: left;
+.contact-container {
     color: white;
     padding: 5vw;
-    font-size: 25px;
+    font-size: 30px;
+    
+        & h2{
+        background-color: var(--rojo);
+        border-top: 3px solid white;
+        border-bottom:3px solid white;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        font-size: 45px;
+        text-shadow: 3px 5px 4px black;/* offset-x | offset-y | blur-radius | color */
+    }
 }
-.contact-text h2{
-    background-color: var(--rojo);
-    border-top: 3px solid white;
-    border-bottom:3px solid white;
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-    font-size: 45px;
-    text-shadow: 3px 5px 4px black;/* offset-x | offset-y | blur-radius | color */
-   // opacity: 80%;
-}
-.contact-block1{
-    background-color: rgba(0,0,0,0.9);
-    margin-bottom: 5vw;
+form{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
 }
 .contact-items{
     display: block;
     margin-bottom: 2.5vw;
     border-radius: 1vw;
+    height: 30px;
 }
-#coment{
+#box-comment{
     width: 50vw;
     height: 15vw;
     min-width: 190px;
 }
 
 .contact-large{
-    width: 25vw;
+    width: 50vw;
     min-width: 190px;
 }
 .buttoms-contact{
     border-radius: 10px;
-    background-color: var(--rojo);
+    background-color: var(--azul);
     color: white;
-    font-size: 20px;
-}
-.buttoms-contact:hover{
     font-size: 25px;
+    display: inline-block;
+    border: 3px solid white;
+    &:hover{
+    font-size: 28px;
 }
-.contact-text a{
-    border-radius: 10px;
-    background-color: var(--rojo);
+}
+.click-box{
+background-color: rgba(0, 0, 0, 0.7);
+text-align: center;
+border-radius: 30px;
+padding: 10px;
+
+    & a{
+    text-decoration: none;
     color: white;
-    font-size: 20px;
-    padding: 5px;
-    border:1px solid white;
-}
-.contact-text a:hover{
-    font-size: 25px;
+        &:hover{
+        text-decoration: underline white;
+        }
+    }
 }
