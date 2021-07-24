@@ -14,13 +14,14 @@
 }
 .contact-text h2{
     background-color: var(--rojo);
-    border-bottom:thick double white;
+    border-top: 3px solid white;
+    border-bottom:3px solid white;
     border-radius: 20px;
     text-align: center;
-    color: burlywood;
+    color: white;
     font-size: 45px;
-    text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
-    opacity: 80%;
+    text-shadow: 3px 5px 4px black;/* offset-x | offset-y | blur-radius | color */
+   // opacity: 80%;
 }
 .contact-block1{
     background-color: rgba(0,0,0,0.9);
