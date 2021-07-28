@@ -16,6 +16,8 @@ import { LogTitleComponent } from './components/log-title/log-title.component';
 import { SearchformComponent } from './components/searchform/searchform.component';
 import { BlockDataComponent } from './components/block-data/block-data.component';
 import { BlockTitleComponent } from './components/block-title/block-title.component';
+import { ActivatedRouteComponent } from './components/activated-route/activated-route.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { BlockTitleComponent } from './components/block-title/block-title.compon
     LogTitleComponent,
     SearchformComponent,
     BlockDataComponent,
-    BlockTitleComponent
+    BlockTitleComponent,
+    ActivatedRouteComponent,
+  
   ],
   imports: [
     BrowserModule,
