@@ -1,4 +1,4 @@
-<main id="main"> 
+<main> 
     <div id="block-img1" data-speed="1">
         <app-block-title 
         [title]="title"
@@ -10,6 +10,7 @@
             [blockTitle]="block.title"
             [blockText]="block.text"
             ></app-block-data>
+            <p *ngIf="datita">{{datita.enlaces.url1}}</p>
         </div>
     </div>
 </main>

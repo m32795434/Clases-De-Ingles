@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResourcesService} from 'src/app/services/resources.service';
 
 @Component({
   selector: 'app-resources',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourcesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private resourcesService: ResourcesService
+
+  ) { }
   title= "Recursos";
-  
+  datita : any;
+
 blocks=[
   {
     title:"Recursos Tipo 1",
@@ -26,7 +31,15 @@ blocks=[
     
 ]
 
-  ngOnInit(): void {
-  }
+showResources () {
+  this.resourcesService.getResources()
+  .subscribe((data: any)=>{
+    console.log(data);
+    this.datita = data;
+  });
+}
 
+ngOnInit(): void {
+  this.showResources();
+}
 }
