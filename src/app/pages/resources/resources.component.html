@@ -5,13 +5,12 @@
         ></app-block-title>
         <div class="container">
             
-            <app-block-data
+            <app-block-data-resources
             *ngFor="let recurso of datita"
             [blockTitle]="recurso.titulo"
             [blockText]="recurso.tipo"
-            [link]="recurso.url"
-            class="block">
-            </app-block-data> 
+            [link]="recurso.url">
+            </app-block-data-resources> 
             
             
             

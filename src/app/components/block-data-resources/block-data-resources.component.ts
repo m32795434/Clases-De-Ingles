@@ -8,7 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BlockDataResourcesComponent implements OnInit {
 
   constructor() { }
-
+  @Input() blockTitle?: string;
+  @Input() blockText?: string;
+  @Input() link?: string;
+  
   ngOnInit(): void {
   }
 
