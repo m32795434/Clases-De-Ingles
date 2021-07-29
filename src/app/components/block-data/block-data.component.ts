@@ -11,7 +11,7 @@ export class BlockDataComponent implements OnInit {
 
   @Input() blockTitle?: string;
   @Input() blockText?: string;
-  
+  @Input() link?: string;
    
 
   ngOnInit(): void {

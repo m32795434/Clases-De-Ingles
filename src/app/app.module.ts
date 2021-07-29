@@ -17,6 +17,7 @@ import { SearchformComponent } from './components/searchform/searchform.componen
 import { BlockDataComponent } from './components/block-data/block-data.component';
 import { BlockTitleComponent } from './components/block-title/block-title.component';
 import { ActivatedRouteComponent } from './components/activated-route/activated-route.component';
+import { BlockDataResourcesComponent } from './components/block-data-resources/block-data-resources.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ActivatedRouteComponent } from './components/activated-route/activated-
     BlockDataComponent,
     BlockTitleComponent,
     ActivatedRouteComponent,
+    BlockDataResourcesComponent,
   
   ],
   imports: [

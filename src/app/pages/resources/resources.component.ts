@@ -13,24 +13,10 @@ export class ResourcesComponent implements OnInit {
 
   ) { }
   title= "Recursos";
-  datita : any;
+  
 
-blocks=[
-  {
-    title:"Recursos Tipo 1",
-    text: "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre"
-  },
-  {
-    title:"Recursos Tipo 2",
-    text:"Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre."
-  },
-  {
-    title:"Recursos Tipo 3",
-    text:"Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre."
-  }
-    
-]
 
+datita : any;
 showResources () {
   this.resourcesService.getResources()
   .subscribe((data: any)=>{

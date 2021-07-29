@@ -6,11 +6,15 @@
         <div class="container">
             
             <app-block-data
-            *ngFor="let block of blocks"
-            [blockTitle]="block.title"
-            [blockText]="block.text"
-            ></app-block-data>
-            <p *ngIf="datita">{{datita.enlaces.url1}}</p>
+            *ngFor="let recurso of datita"
+            [blockTitle]="recurso.titulo"
+            [blockText]="recurso.tipo"
+            [link]="recurso.url"
+            class="block">
+            </app-block-data> 
+            
+            
+            
         </div>
     </div>
 </main>
