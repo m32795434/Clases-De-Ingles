@@ -50,12 +50,27 @@
 .searchBot{
     display: none;
 }
+.button-hamb {
+    display: none; 
+}
 
 @media (max-width:640px){
     .searchTop{
-display: none;
+        display: none;
     }
     .searchBot{
         display: block;
+    }
+
+    #nav-hidden{
+        display: none;}
+
+    .button-hamb{
+        display: block;
+        background: none;
+            & img{
+                width: 8vw;
+                height: auto;
+            }
     }
 }

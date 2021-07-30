@@ -4,7 +4,12 @@
     <app-log-title></app-log-title>
     <app-searchform class="searchTop"></app-searchform>
 </div>
-<app-nav></app-nav>
+
+<button (click)="toggleInformation ()" class="button-hamb">
+    <img src="/assets/images/menu1.png" alt="boton nav">
+</button>
+<app-nav *ngIf="mostrar" ></app-nav>
+<app-nav id="nav-hidden"></app-nav>
 
 <app-searchform class="searchBot"></app-searchform>
     
