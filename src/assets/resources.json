@@ -1,37 +1,49 @@
 [   { 
     "titulo":"Nivel Inicial",
     "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-    "url" :"https://www.google.com.ar"
+    "url" :"https://www.google.com.ar",
+    "src":"",
+    "alt":""
     },
     {
     "titulo":"Profesorado",
     "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-    "url" :"https://www.lanacion.com.ar"
+    "url" :"https://www.lanacion.com.ar",
+    "src":"",
+    "alt":""
        
     },
     {
-        "titulo":"Exámenes Internacionales",
-        "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-        "url" :"https://www.lanacion.com.ar"
-           
-        },
-        {
-            "titulo":"Clases de Apoyo Escolar",
-            "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-            "url" :"https://www.lanacion.com.ar"
-               
-            },
-            {
-                "titulo":"Clases de Conversación",
-                "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-                "url" :"https://www.lanacion.com.ar"
-                   
-                },
-                {
-                    "titulo":"Inglés con Fines Específicos",
-                    "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
-                    "url" :"https://www.lanacion.com.ar"
-                       
-                    }
+    "titulo":"Exámenes Internacionales",
+    "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
+    "url" :"https://www.lanacion.com.ar",
+    "src":"",
+    "alt":""
+        
+    },
+    {
+    "titulo":"Clases de Apoyo Escolar",
+    "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
+    "url" :"https://www.lanacion.com.ar",
+    "src":"",
+    "alt":""
+        
+    },
+    {
+    "titulo":"Clases de Conversación",
+    "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
+    "url" :"https://www.lanacion.com.ar",
+    "src":"",
+    "alt":""
+        
+    },
+    {
+    "titulo":"Inglés con Fines Específicos",
+    "tipo":"Aquí encontrarás todo el material que usaremos para Harry Potter se ha quedado huérfano y vive en casa de sus abominables  tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para  siempre.",
+    "url" :"https://www.lanacion.com.ar",
+    "src":"",
+    "alt":""
+        
+    }
 ]
 

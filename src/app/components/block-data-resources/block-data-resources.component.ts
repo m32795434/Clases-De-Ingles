@@ -11,7 +11,9 @@ export class BlockDataResourcesComponent implements OnInit {
   @Input() blockTitle?: string;
   @Input() blockText?: string;
   @Input() link?: string;
-  
+  @Input() alt?: string;
+  @Input() src?: string;
+
   ngOnInit(): void {
   }
 
