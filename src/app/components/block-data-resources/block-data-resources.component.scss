@@ -2,26 +2,34 @@
     background-color: rgba(0, 0, 0, 0.7);
     border: 2px solid white;
     display: flex;
-    //margin-bottom: 10vw;
+    align-items: center;
+    
+        & img{
+            max-width: 400px;
+            height: 100%;
+            
+        }
 
-}.text {
+}
+.text {
     color: white;
     text-align: center;
     padding: 5vw;
     font-size: 25px;
-    & h2{
-    color: burlywood;
-    font-size: 53px;
-    text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
-    margin-top: 0;
-    opacity: 80%;
-    }
-     & a{
-        color: white;
-        text-decoration: none;
-         &:hover{
-             text-decoration: underline;
-         }
-     }
+    
+        & h2{
+        color: burlywood;
+        font-size: 53px;
+        text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
+        margin-top: 0;
+        opacity: 80%;
+        }
+        & a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
 
 }
