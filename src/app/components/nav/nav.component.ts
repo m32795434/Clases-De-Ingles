@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-nav',
@@ -10,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavComponent implements OnInit {
   
-
-  constructor( ) { }
+  constructor(
+    private app: AppComponent
   
-
+   ) { }
+  
+  toggleInformationNav () {
+   return this.app.mostrar = !this.app.mostrar;
+  }
   ngOnInit(): void  {
     
   }
