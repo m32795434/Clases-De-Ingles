@@ -3,10 +3,34 @@ main{
     margin-bottom: 40px;
 }
 .block-img{
-    background: url(/assets/images/02.jpg) fixed;
-    background-size: cover;
+    background: fixed border-box url(/assets/images/1600/021600.jpg) top 25% left 50%/cover;
     height: 100%;
     width: 100%;
+        @media (max-width: 3840px) {
+            background: fixed border-box url(/assets/images/3840/023840.jpg) top 25% left 50%/cover;
+            max-width: 1920px;
+        }
+        @media (max-width: 1920px) {
+            background: fixed border-box url(/assets/images/1920/021920.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 1600px) {
+            background: fixed border-box url(/assets/images/1600/021600.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 1280px) {
+            background: fixed border-box url(/assets/images/1280/021280.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 1023px) {
+            background: fixed border-box url(/assets/images/1023/021023.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 900px) {
+            background: fixed border-box url(/assets/images/900/02900.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 767px) {
+            background: fixed border-box url(/assets/images/767/02767.jpg) top 25% left 50%/cover;
+        }
+        @media (max-width: 370px) {
+            background: fixed border-box url(/assets/images/370/02370.jpg) top 25% left 50%/cover;
+        }
 }
 .contact-container {
     color: white;

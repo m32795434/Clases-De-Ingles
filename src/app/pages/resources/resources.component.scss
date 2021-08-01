@@ -1,12 +1,32 @@
 #block-img1 {
-    /*position: 0%left, 0% top/background-attachment:fixed;/
-    background-image:url(01.jpeg);// podría tmb definir valores para 
-background-clip/background-color/background-origin/background-repeat*/
-    background: url(/assets/images/01.jpg) fixed;
-    background-size:cover;
+    background: fixed border-box url(/assets/images/1600/051600.jpg) top 30% left 50%/cover;
     height: 100%;
     width: 100%;
-    /* margin: 0 auto; */
+        @media (max-width: 3840px) {
+            background: fixed border-box url(/assets/images/3840/053840.jpg) top 30% left 50%/cover;
+            max-width: 1920px;
+        }
+        @media (max-width: 1920px) {
+            background: fixed border-box url(/assets/images/1920/051920.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 1600px) {
+            background: fixed border-box url(/assets/images/1600/051600.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 1280px) {
+            background: fixed border-box url(/assets/images/1280/051280.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 1023px) {
+            background: fixed border-box url(/assets/images/1023/051023.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 900px) {
+            background: fixed border-box url(/assets/images/900/05900.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 767px) {
+            background: fixed border-box url(/assets/images/767/05767.jpg) top 30% left 50%/cover;
+        }
+        @media (max-width: 370px) {
+            background: fixed border-box url(/assets/images/370/05370.jpg) top 30% left 50%/cover;
+        }
 }
 .container{
     display: flex;

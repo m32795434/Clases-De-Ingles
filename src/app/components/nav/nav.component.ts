@@ -11,11 +11,11 @@ import { AppComponent } from 'src/app/app.component';
 export class NavComponent implements OnInit {
   
   constructor(
-    private app: AppComponent
+   private app: AppComponent
   
    ) { }
   
-  toggleInformationNav () {
+   toggleInformationNav () {
    return this.app.mostrar = !this.app.mostrar;
   }
   ngOnInit(): void  {
