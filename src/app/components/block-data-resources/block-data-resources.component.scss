@@ -14,10 +14,8 @@
 
 }
 .text {
-    color: white;
     text-align: center;
-    padding: 5vw;
-    font-size: 25px;
+    padding: 3vw;
     
         & h2{
         color: burlywood;
@@ -25,6 +23,17 @@
         text-shadow: 1px 1px 1px white;/* offset-x | offset-y | blur-radius | color */
         margin-top: 0;
         opacity: 80%;
+            @media (max-width: 610px){
+                font-size: 30px;
+            }
+        }
+        & p{
+            color: white;
+            font-size: 18px;
+
+                @media (max-width: 610px){
+                    font-size: 16px;
+                }
         }
         & a{
             color: white;
