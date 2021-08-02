@@ -10,6 +10,10 @@
  }
  body{
     background-color:var(--rojo);
+      @media (max-width: 576px){
+         margin:0;
+         padding:0;
+  }
     
  }
  

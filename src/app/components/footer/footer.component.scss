@@ -1,10 +1,14 @@
 footer {
     border-top: double thick var(--rosa);
     height: auto;
-    display: grid;
-    grid-template: auto / 32% 2% 32% 2% 32%;
-    //box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--azul);
+        @media (max-width: 470px){
+            flex-direction: column;
+            gap: 40px;
+        }
     }
 .footer-copy-contact{
     color: white;
@@ -12,61 +16,111 @@ footer {
     grid-template:20% 40% 20% 20% / auto;
     text-align: center;
     align-items: center;
-    & h2{
-        font-size: 25px;
-        font-family: serif;
-        font-weight: 700;
-    }
+    flex-grow: 1;
+
+        & h2{
+            font-size: 25px;
+            font-family: serif;
+            font-weight: 700;
+                @media (max-width: 576px){
+                    font-size: 20px;         
+        }
+        }
     
-    & a{
-        color: white;
-        display: block;
-        color: white;
-        font-size: 25px;
-        font-family: serif;
+        & a{
+            color: white;
+            display: block;
+            color: white;
+            font-size: 25px;
+            font-family: serif;
+                @media (max-width: 576px){
+                    font-size: 20px;         
+        }
 
        &:hover{
-        border: 4px solid white;
-        font-size: 27px;
-        border-radius: 30px;
-        padding: 3px;
-       }
+            border: 4px solid white;
+            font-size: 27px;
+            border-radius: 30px;
+            padding: 3px;
+                @media (max-width: 576px){
+                    padding: 1px;   
+                    border: 1px solid white;  
+                    font-size: 22px;    
+                }
+            }
     }
     & p{
-font-size: 20px;
+        font-size: 20px;
+            @media (max-width: 576px){
+                   font-size: 18px;         
+            }
     }
+   
 }
 .contact-data{
-    list-style: none;
     text-align: center;
     margin: 0;
-    padding: 0;
+    
+        @media (max-width: 576px){
+            font-size: 18px;      
+            & p{
+                margin:0 0 5px 0;
+            }   
+    }
 
+}
+.borde1{
+    border-right: 1px solid var(--rosa);
+    margin: 40px 0 40px 0;
+    flex-grow: 1;
+        @media (max-width: 470px){
+            display: none;
+        }
 }
 .footer-follow{
     text-align: center;
     display: grid;
     grid-template: 20% 80% / auto;
     align-items: center;
+    flex-grow: 1;
         
-    & p{
+    & h2{
         color: white;
         font-size: 25px;
         font-family: serif;
         font-weight: 700;
+            @media (max-width: 576px){
+                font-size: 20px;         
+            }
     }
     & img{
-        width: 60px;
+        width: 40px;
         height: auto;
-        border-radius: 14px;
-        &:hover{
-            border: 4px solid white;
-        }
+        border-radius: 30px;
+            &:hover{
+                border: 4px solid white;
+            }
+            
     }
     & div{
         display: flex;
         justify-content:space-around;
+            @media (max-width: 576px){
+            flex-direction: column;
+            }
+            @media (max-width: 470px){
+                flex-direction: row;
+            }
     }
+}
+
+.borde2{
+    border-left: 1px solid var(--rosa);
+    margin: 40px 0 40px 0;
+    flex-grow: 1;
+        @media (max-width: 470px){
+            display: none;
+        }
 }
 
 .footer-credits{
@@ -75,22 +129,26 @@ font-size: 20px;
     grid-template: 20% 80% / auto;
     align-items: center;
     color: white;
-    font-size: 20px;
-    & p{
-        font-size: 20px;
-        font-family: "Dancing Script", cursive;
-    }
-    & h2{
-        font-size: 25px;
-        font-family: serif;
-        font-weight: 700;
-    }
+    flex-grow: 1;
+        & p{
+            font-size: 20px;
+            font-family: "Dancing Script", cursive;
+            @media (max-width: 470px){
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+        & h2{
+            font-size: 25px;
+            font-family: serif;
+            font-weight: 700;
+                @media (max-width: 576px){
+                    font-size: 20px;         
+                }
+                @media (max-width: 470px){
+                    font-size: 16px;
+                    margin: 0;
+                }
+        }
 }
-.borde1{
-    border-right: 1px solid var(--rosa);
-    margin: 40px 0 40px 0;
-}
-.borde2{
-    border-left: 1px solid var(--rosa);
-    margin: 40px 0 40px 0;
-}
+
