@@ -16,12 +16,12 @@ export class ResourcesComponent implements OnInit {
   
 
 
-datita : any;
+recursos : any;
 showResources () {
   this.resourcesService.getResources()
   .subscribe((data: any)=>{
-    console.log(data);
-    this.datita = data;
+    
+    this.recursos = data;
   });
 }
 

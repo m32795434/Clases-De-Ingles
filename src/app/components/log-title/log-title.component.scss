@@ -4,28 +4,35 @@
     align-content: stretch;
     align-items: flex-end;
     height: auto;
-    }
-.logo-image{
-    width: 22vw;
-    min-width: 100px;
-    height: auto;
-    margin-top: 2px;
-
+        & img{
+            width: 22vw;
+            min-width: 100px;
+            height: auto;
+            margin-top: 2px;
+                &:hover{
+                    filter: grayscale(100%);
+                }
+        }
 }
 
 .title{/*div contenedor de h1 y h2*/
     display: flex;
-}
-.title h1{
-    font-size: 3vw;
-    
-}
-.title h2{ 
-    font-size:2vw;
-    font-family: "Dancing Script", cursive;
-    margin-left: 1vw;
-}
-.title a{
-    color: white;
-    text-decoration: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+        & h1{
+            font-family: 'Amatic SC', cursive;
+            font-size: 10vw;
+            margin: 5px 0 0 20px;
+        }
+        & h2{ 
+            font-size:4vw;
+            font-family: 'WindSong', cursive;
+            margin: 0 0 0 100px;
+            font-weight: 300;
+        }
+        & a{
+            color: white;
+            text-decoration: none;
+        }
 }

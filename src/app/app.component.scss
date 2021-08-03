@@ -49,7 +49,19 @@
     border: 2px solid white;
     margin-left: 0;
     }
+.quote{
+display: flex;
+flex-direction: column;
+align-items: center;
 
+    & p{
+        text-align: center;
+        // max-width: 200px;
+        font-size: 25px;
+        margin: 0 0 4.5vw 0;
+        font-family: 'Dancing Script', cursive;
+    }
+}
 
 .searchBot{
     display: none;
