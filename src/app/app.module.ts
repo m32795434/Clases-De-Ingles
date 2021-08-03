@@ -18,6 +18,7 @@ import { BlockDataComponent } from './components/block-data/block-data.component
 import { BlockTitleComponent } from './components/block-title/block-title.component';
 import { ActivatedRouteComponent } from './components/activated-route/activated-route.component';
 import { BlockDataResourcesComponent } from './components/block-data-resources/block-data-resources.component';
+import { HamburgerToggleDirective } from './directives/hamburger-toggle.directive';
 
 
 @NgModule({
@@ -37,6 +38,8 @@ import { BlockDataResourcesComponent } from './components/block-data-resources/b
     BlockTitleComponent,
     ActivatedRouteComponent,
     BlockDataResourcesComponent,
+    HamburgerToggleDirective,
+    
   
   ],
   imports: [

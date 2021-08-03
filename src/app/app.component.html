@@ -5,14 +5,17 @@
     <app-searchform class="searchTop"></app-searchform>
 </div>
 
-<button (click)="toggleInformation ()" class="button-hamb">
-    <img src="/assets/images/menu1.png" alt="boton nav">
-</button>
 
-<app-nav *ngIf="mostrar" ></app-nav>
+<app-nav></app-nav>
 
 <app-searchform class="searchBot"></app-searchform>
     
 <router-outlet id="main"></router-outlet>
 
 <app-footer></app-footer>
+
+<!-- <app-nav *ngIf="mostrar" ></app-nav> -->
+
+<!-- <button (click)="toggleInformation ()" class="button-hamb">
+    <img src="/assets/images/menu1.png" alt="boton nav">
+</button> -->

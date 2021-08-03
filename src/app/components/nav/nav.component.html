@@ -1,17 +1,26 @@
 <nav>
-    <ul class="nav-list"> 
+    <!--Directive selector: appHamburgerToggle:open/close animation on click. -->
+    <button class="hamburger hamburger--spin" type="button" appHamburgerToggle (click)="shouldshow = !shouldshow;">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <!-- [ngClass]=Object - keys are CSS classes that get added when the expression given in the value 
+        evaluates to a TRUTHY value, otherwise they are removed. -->
+    <ul class="nav-list" [ngClass]="{hide:!shouldshow}"> 
         <li class="nav-list-item">
             
-            <a (click)="toggleInformationNav ()" routerLink="/about" class="nav-list-item-link">Sobre Mí</a>
+            <a  routerLink="/about" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Sobre Mí</a>
         </li>
         <li class="nav-list-item">
-            <a (click)="toggleInformationNav ()" routerLink="/classes" class="nav-list-item-link">Cursos/Clases</a>
+            <a  routerLink="/classes" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Cursos/Clases</a>
         </li>
         <li class="nav-list-item">
-            <a (click)="toggleInformationNav ()" routerLink="/contact" class="nav-list-item-link">Contacto</a>
+            <a  routerLink="/contact" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Contacto</a>
         </li>
         <li class="nav-list-item">
-            <a (click)="toggleInformationNav ()" routerLink="/resources" class="nav-list-item-link">Recursos</a>
+            <a  routerLink="/resources" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Recursos</a>
         </li>
     </ul>
 </nav>
+<!-- (click)="toggleInformationNav ()" -->
