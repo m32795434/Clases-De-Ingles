@@ -46,20 +46,14 @@
     align-content: stretch;
     align-items: flex-end;
     height: auto;
+    border: 2px solid white;
+    margin-left: 0;
     }
+
+
 .searchBot{
     display: none;
 }
-// .button-hamb{
-//     display: block;
-//     background: none;
-//     border: 2px solid white;
-   
-//         & img{
-//             width: 8vw;
-//             height: auto;
-//         }
-// }
 
 @media (max-width:640px){
     .searchTop{
