@@ -1,3 +1,4 @@
+// <!--Directive selector: appHamburgerToggle:open/close animation on click. LA APAGUÉ-->
 import {Directive, HostBinding, HostListener} from '@angular/core';
 
 @Directive({
@@ -8,7 +9,7 @@ export class HamburgerToggleDirective {
   constructor() { }
 
   @HostBinding('class.is-active')
-  private isActive = false;
+  isActive = false;
 
 
   @HostListener('click')

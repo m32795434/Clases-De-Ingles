@@ -7,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  constructor(){}
+    
+ 
   public shouldshow:any = false;
-  constructor() { }
+  
+  toggleInformation (){
+  this.shouldshow = !this.shouldshow;
+  
+  }
+  
+  
   
   ngOnInit(): void  {
     

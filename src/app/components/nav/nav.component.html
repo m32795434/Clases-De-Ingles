@@ -1,25 +1,26 @@
 <nav>
-    <!--Directive selector: appHamburgerToggle:open/close animation on click. -->
-    <button class="hamburger hamburger--spin" type="button" appHamburgerToggle (click)="shouldshow = !shouldshow;">
+    <!--Directive selector: appHamburgerToggle:open/close animation on click. LA APAGUÉ-->
+    <button [ngClass]="{'hamburger': true, 'hamburger--spin': true, 'is-active': shouldshow}" type="button"  (click)="toggleInformation ()">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
     </button>
+    <!-- (click)="shouldshow = !shouldshow;" es como una funcion de un único return-->
     <!-- [ngClass]=Object - keys are CSS classes that get added when the expression given in the value 
         evaluates to a TRUTHY value, otherwise they are removed. -->
     <ul class="nav-list" [ngClass]="{hide:!shouldshow}"> 
         <li class="nav-list-item">
             
-            <a  routerLink="/about" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Sobre Mí</a>
+            <a  routerLink="/about" class="nav-list-item-link"(click)="toggleInformation ()">Sobre Mí</a>
         </li>
         <li class="nav-list-item">
-            <a  routerLink="/classes" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Cursos/Clases</a>
+            <a  routerLink="/classes" class="nav-list-item-link"(click)="toggleInformation ()">Cursos/Clases</a>
         </li>
         <li class="nav-list-item">
-            <a  routerLink="/contact" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Contacto</a>
+            <a  routerLink="/contact" class="nav-list-item-link"(click)="toggleInformation ()">Contacto</a>
         </li>
         <li class="nav-list-item">
-            <a  routerLink="/resources" class="nav-list-item-link"(click)="shouldshow = !shouldshow;">Recursos</a>
+            <a  routerLink="/resources" class="nav-list-item-link"(click)="toggleInformation ()">Recursos</a>
         </li>
     </ul>
 </nav>
