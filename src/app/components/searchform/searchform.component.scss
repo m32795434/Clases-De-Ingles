@@ -5,17 +5,27 @@
     min-width: 210px;
     height: auto;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 20px;
 }
 
 .button-search{
+    display: inline-block;
     background: none;
     border: none;
-}
-.button-search-img{
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-}
+        & img{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-bottom: -3px;
+                @media (max-width: 640px){
+                    filter: brightness(100);
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    margin-bottom: -7px;
+                
+                }
+        }
+}   
 /*-----------END SEARCH FORM--------*/
