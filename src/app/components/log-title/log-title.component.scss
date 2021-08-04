@@ -5,9 +5,16 @@
     align-items: flex-end;
     height: auto;
     border: 2px solid white;
+        @media (max-width: 470px){
+            background: linear-gradient(.25turn, white 10% ,var(--azul)30%,var(--azul)5%,var(--azul)5%);
+        }
+        @media (max-width:350px){
+            background: var(--azul);
+        }
     }
 
 .logo-anchor{
+
     & img{
         width: 22vw;
         min-width: 100px;
@@ -16,6 +23,9 @@
                 filter: grayscale(100%);
             }
     }
+    @media (max-width:350px){
+        display: none;
+    }
 }
 .title{
     color: white;
@@ -23,25 +33,73 @@
             font-family: 'Amatic SC', cursive;
             font-size: 10vw;
             margin: 5px 0 0 0;
+                @media (max-width: 470px){
+                    font-size: 49px;
+                }
+                @media (max-width:350px){
+                    background: linear-gradient(.25turn, #A8021B, #B53207,#BF1A08,#BF087F,#A707B5);
+                    border-radius: 35px;
+                    text-align: center;
+                    &:hover{
+                        font-size: 17vw;
+                        filter: drop-shadow(16px 16px 10px gray);
+                        // &::after{
+                        //     background-image:url(/assets/images/tilde.png);
+                        // }
+                        
+                    }
+                }
+                
         }
         & h2{ 
             font-size:4vw;
             font-family: 'WindSong', cursive;
             margin: 0 0 0 6vw;
             font-weight: 300;
+                @media (max-width: 470px){
+                    font-size: 19px;
+                }
+        }
+        & p{
+            display: none;
+                @media (max-width: 470px){
+                    display: block;
+                    text-align: right;
+                    margin-right: 1vw;
+                }
+        }
+        & a{
+            color: white;
+            text-decoration: none;
+                
         }
 }
 .quote{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
         & p{
             text-align: center;
             font-size: 2vw;
-            // margin: 0 0 4.5vw 0;
             font-family: 'Dancing Script', cursive;
+                @media (max-width:767px){
+                    font-size: 16px;
+                }
+
+
         }
+        @media (max-width:900px){
+            display: block;
+            margin: 0 1vw 4vw 0;
+        }
+        @media (max-width:576px){
+            margin: 0 1vw 2vw 0;
+        }
+        @media (max-width: 470px){
+            display: none;
+        }
+        
+        
     }
 .hide{
     @media (max-width:900px){
