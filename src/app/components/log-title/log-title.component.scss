@@ -2,48 +2,33 @@
     background: linear-gradient(.25turn, var(--azul)70%, white);
     display: flex;
     justify-content: space-between;
-    align-content: stretch;
     align-items: flex-end;
     height: auto;
     border: 2px solid white;
-    margin-left: 0;
     }
-.log-title{/*FLEX CONTENEDOR DEL LOGO, TIT*/
-    display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: flex-end;
-    height: auto;
-        & img{
-            width: 22vw;
-            min-width: 100px;
-            height: auto;
-            margin-top: 2px;
-                &:hover{
-                    filter: grayscale(100%);
-                }
-        }
-}
 
-.title{/*div contenedor de h1 y h2*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch;
+.logo-anchor{
+    & img{
+        width: 22vw;
+        min-width: 100px;
+        height: auto;
+            &:hover{
+                filter: grayscale(100%);
+            }
+    }
+}
+.title{
+    color: white;
         & h1{
             font-family: 'Amatic SC', cursive;
             font-size: 10vw;
-            margin: 5px 0 0 20px;
+            margin: 5px 0 0 0;
         }
         & h2{ 
             font-size:4vw;
             font-family: 'WindSong', cursive;
-            margin: 0 0 0 100px;
+            margin: 0 0 0 6vw;
             font-weight: 300;
-        }
-        & a{
-            color: white;
-            text-decoration: none;
         }
 }
 .quote{
@@ -53,14 +38,13 @@
     
         & p{
             text-align: center;
-            // max-width: 200px;
-            font-size: 25px;
-            margin: 0 0 4.5vw 0;
+            font-size: 2vw;
+            // margin: 0 0 4.5vw 0;
             font-family: 'Dancing Script', cursive;
         }
     }
 .hide{
-    @media (max-width:640px){
+    @media (max-width:900px){
     display: none;
     }
 }
