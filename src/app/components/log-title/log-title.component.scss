@@ -1,3 +1,13 @@
+.log-title-srch{/*FLEX CONTENEDOR DEL LOGO, TIT, Y FORM SEARCH*/
+    background: linear-gradient(.25turn, var(--azul)70%, white);
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-end;
+    height: auto;
+    border: 2px solid white;
+    margin-left: 0;
+    }
 .log-title{/*FLEX CONTENEDOR DEL LOGO, TIT*/
     display: flex;
     justify-content: space-between;
@@ -35,4 +45,22 @@
             color: white;
             text-decoration: none;
         }
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+        & p{
+            text-align: center;
+            // max-width: 200px;
+            font-size: 25px;
+            margin: 0 0 4.5vw 0;
+            font-family: 'Dancing Script', cursive;
+        }
+    }
+.hide{
+    @media (max-width:640px){
+    display: none;
+    }
 }
