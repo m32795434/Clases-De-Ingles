@@ -38,7 +38,8 @@ main{
     font-size: 30px;
     
         & h2{
-        background-color: var(--rojo);
+        background: radial-gradient(#A8021B, #B53207,#BF1A08,#BF087F,#A707B5);
+        filter: grayscale(50%);
         border-top: 3px solid white;
         border-bottom:3px solid white;
         border-radius: 20px;
@@ -46,14 +47,26 @@ main{
         color: white;
         font-size: 45px;
         text-shadow: 3px 5px 4px black;/* offset-x | offset-y | blur-radius | color */
-    }
+            @media (max-width: 370px) {
+                font-size: 32px;
+                border-radius: 39px;
+                }
+        }
+        & form{
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 900px) {
+            font-size: 20px;
+        }
+        @media (max-width: 370px) {
+        padding: 1vw;
+        }
+
 }
-form{
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 40px;
-}
+
 .contact-items{
     display: block;
     margin-bottom: 2.5vw;
@@ -77,9 +90,12 @@ form{
     font-size: 25px;
     display: inline-block;
     border: 3px solid white;
-    &:hover{
-    font-size: 28px;
-}
+        &:hover{
+        background: radial-gradient(circle, #00b4ff 50%, #050c0f 100%);
+        }
+        @media (max-width: 370px) {
+            font-size: 18px;
+            }
 }
 .click-box{
 background-color: rgba(0, 0, 0, 0.7);
