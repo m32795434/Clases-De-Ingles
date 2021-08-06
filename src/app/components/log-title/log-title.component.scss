@@ -9,7 +9,7 @@
             background: linear-gradient(.25turn, white 10% ,var(--azul)30%,var(--azul)5%,var(--azul)5%);
         }
         @media (max-width:350px){
-            background: var(--azul);
+            background: radial-gradient(black,var(--azul));
         }
     }
 
