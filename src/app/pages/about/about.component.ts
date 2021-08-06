@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   title= "Sobre Mí";
 blocks=[
   {
-    title:"¿Quien Soy?",
+    title:"¿Quién Soy?",
     text: "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre"
   },
   {
