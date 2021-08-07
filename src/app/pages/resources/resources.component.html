@@ -5,7 +5,8 @@
         ></app-block-title>
         <div class="container">
             
-            <app-block-data-resources
+            <!-- este bloque se muestra de 1601px para arriba -->
+            <app-block-data-resources class="hide"
             *ngFor="let recurso of recursos"
             [blockTitle]="recurso.titulo"
             [blockText]="recurso.tipo"
@@ -13,9 +14,17 @@
             [src]="recurso.src"
             [alt]="recurso.alt"
             >
+            <!-- este bloque se muestra de 1600px para abajo -->
             </app-block-data-resources> 
-            
-            
+            <app-block-data-resources class="show"
+            *ngFor="let recurso of recursos"
+            [blockTitle]="recurso.titulo"
+            [blockText]="recurso.tipo"
+            [link]="recurso.url"
+            [src]="recurso.src1600"
+            [alt]="recurso.alt"
+            >
+            </app-block-data-resources>
             
         </div>
     </div>

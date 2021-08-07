@@ -5,11 +5,18 @@
         ></app-block-title>
         <div class="container">
             
-            <app-block-data-resources
+            <app-block-data-resources class="hide"
             *ngFor="let block of blocks"
             [blockTitle]="block.title"
             [blockText]="block.text"
             [src]="block.src"
+            [alt]="block.alt"
+            ></app-block-data-resources>
+            <app-block-data-resources class="show"
+            *ngFor="let block of blocks"
+            [blockTitle]="block.title"
+            [blockText]="block.text"
+            [src]="block.src1600"
             [alt]="block.alt"
             ></app-block-data-resources>
         </div>

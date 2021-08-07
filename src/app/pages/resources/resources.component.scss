@@ -35,3 +35,15 @@
     margin-bottom: 40px;
     
 }
+.hide{
+    display: block;
+    @media (max-width:1600){
+        display: none;   
+    }
+}
+.show{
+    display: none;
+    @media (max-width:1600){
+        display: block;   
+    }
+}
