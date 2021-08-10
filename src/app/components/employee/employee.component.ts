@@ -9,9 +9,6 @@ import {NgForm} from '@angular/forms'
 })
 export class EmployeeComponent implements OnInit {
 
-
-
-
   constructor(public employeeService: EmployeeService) { }
 
   ngOnInit(): void {
@@ -24,21 +21,15 @@ export class EmployeeComponent implements OnInit {
           this.employeeService.employees = res;
         },
         err => console.error(err)
-      )
-    }
+      )}
 
-addEmployee(form: NgForm){
+  addEmployee(form: NgForm){
   
-  this.employeeService.createEmployee(form.value).subscribe(
-        res => {
-         
-          this.getEmployees();
-          form.reset();
-
-        },
-      
-        err => console.error(err)
-      )
-}
-
+    this.employeeService.createEmployee(form.value).subscribe(
+          res => {
+            this.getEmployees();
+            form.reset();
+          },
+          err => console.error(err)
+        )}
 }

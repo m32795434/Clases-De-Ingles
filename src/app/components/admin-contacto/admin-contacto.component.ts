@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactoService } from "../../services/contacto.service";
 
 @Component({
   selector: 'app-admin-contacto',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminContactoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public contactoService: ContactoService) { }
 
   ngOnInit(): void {
+    this.getContacto();
   }
 
+  getContacto(){
+    this.contactoService.getContacto().subscribe(
+        res => {
+          this.contactoService.contacto = res;
+        },
+        err => console.error(err)
+      )}
 }
