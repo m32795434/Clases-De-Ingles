@@ -21,6 +21,7 @@ import { ActivatedRouteComponent } from './components/activated-route/activated-
 import { BlockDataResourcesComponent } from './components/block-data-resources/block-data-resources.component';
 import { HamburgerToggleDirective } from './directives/hamburger-toggle.directive';
 import { EmployeeComponent } from './components/employee/employee.component';
+import { AdminContactoComponent } from './components/admin-contacto/admin-contacto.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { EmployeeComponent } from './components/employee/employee.component';
     BlockDataResourcesComponent,
     HamburgerToggleDirective,
     EmployeeComponent,
+    AdminContactoComponent,
     
   
   ],
