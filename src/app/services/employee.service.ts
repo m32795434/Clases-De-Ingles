@@ -14,6 +14,6 @@ employees ?: Employee[];
   constructor(private http:HttpClient ) { }
 
   getEmployees() {
-    return this.http.get(this.URL_API);
+    return this.http.get<Employee[]>(this.URL_API);
   }
 }
