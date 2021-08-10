@@ -22,4 +22,8 @@ employees ?: Employee[];
   getEmployees() {
     return this.http.get<Employee[]>(this.URL_API);
   }
+
+  createEmployee(employee: Employee) {
+return this.http.post(this.URL_API, employee);
+  }
 }
