@@ -1,4 +1,12 @@
 .box{
     background-color: white;
     margin-bottom: 40px;
+    padding: 20px;
+        & h1{
+            border-bottom:  1px solid indigo ;
+        }
+        & div{
+            border: 2px solid rgb(32, 30, 51);
+            padding: 20px;
+        }
 }
