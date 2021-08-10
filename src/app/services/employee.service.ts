@@ -9,13 +9,13 @@ export class EmployeeService {
 
 URL_API = 'http://localhost:3000/api/employees';
 
-selectedEmployee?: Employee = {
+selectedEmployee: Employee = {
   name: '',
   office: '',
   position: '',
   salary: 0
 };
-employees ?: Employee[];
+employees!: Employee[];
 
   constructor(private http:HttpClient ) { }
 
