@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactoService } from "../../services/contacto.service";
+import {NgForm} from '@angular/forms'
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
-  
+  constructor(public contactoService: ContactoService) { }
+
   ngOnInit(): void {
   }
+
+  addContacto(form: NgForm){
+  
+    this.contactoService.createContacto(form.value).subscribe(
+          res => {
+            console.log(res);
+            form.reset();
+          },
+          err => console.error(err)
+        )}
 
 }
