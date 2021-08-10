@@ -1,3 +1,6 @@
+levantar npm run build en server
+ng serve en front
+video 1.25min
 # ClasesDeIngles
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
