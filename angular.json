@@ -35,8 +35,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootswatch/dist/materia/bootstrap.min.css"
+              "src/styles.scss"
+              
             ],
             "scripts": []
           },
