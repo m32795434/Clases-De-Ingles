@@ -1,7 +1,33 @@
-levantar npm run build en server
-ng serve en front
-video 1.25min
 # ClasesDeIngles
+
+##CORRER EN LOCAL:
+ON BRANCH MASTER: solo front-end publicado en Netlify
+ON BRANCH backEnd: algo de back-end incluído, corre con Mongodb. Para ver los forms de contacto enviados correr en 
+http://localhost:4200/admin-contacto
+ON BRANCH backEnd:
+-npm install en ambas carpetas
+-levantar con"npm run dev" en server.
+-"ng serve" en carpeta principal.
+-correr "mongod", a menos lo tengamos desde el inicio ejecutando.
+
+
+##OPCIONALES TENIDOS EN CUENTA:
+-etiquetas semanticas
+-llamada a un json interno
+-Usa Sass(en especial con Nesting).
+-Muy responsive (las imagenes inclusive estan optimizadas para 8 breakpoints).
+-Usa Express, con Mongodb
+-manejo de paquetes npm (hamburguers, cors, mongoose, morgan, nodemon)
+-Cosas raras de css: clip-path, shadows, linear and radial gradients, filters.
+-subido a Netlify branck "master".
+-Sitio en Angular con components, directives, services. Uso de NgClass, NgForm, *ngfor, otros.
+
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
