@@ -1,7 +1,6 @@
-require('./database');
-// require('./databaseContacto');
-// const mongoo = require('./database');
+// I require the DB and all the server logic.
 
+require('./database');
 const app = require('./app');
 
 
