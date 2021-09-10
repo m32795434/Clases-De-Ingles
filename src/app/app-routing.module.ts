@@ -6,7 +6,6 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {AboutComponent} from './pages/about/about.component';
 import {ClassesComponent} from './pages/classes/classes.component';
 import {ResourcesComponent} from './pages/resources/resources.component';
-import {EmployeeComponent} from './components/employee/employee.component';
 import {AdminContactoComponent} from './components/admin-contacto/admin-contacto.component'
 
 
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'classes', component: ClassesComponent},
   { path: 'resources', component: ResourcesComponent},
-  { path: 'employees', component: EmployeeComponent},
   { path: 'admin-contacto', component: AdminContactoComponent}
 ];
 

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -20,7 +19,6 @@ import { BlockTitleComponent } from './components/block-title/block-title.compon
 import { ActivatedRouteComponent } from './components/activated-route/activated-route.component';
 import { BlockDataResourcesComponent } from './components/block-data-resources/block-data-resources.component';
 import { HamburgerToggleDirective } from './directives/hamburger-toggle.directive';
-import { EmployeeComponent } from './components/employee/employee.component';
 import { AdminContactoComponent } from './components/admin-contacto/admin-contacto.component';
 
 
@@ -42,7 +40,6 @@ import { AdminContactoComponent } from './components/admin-contacto/admin-contac
     ActivatedRouteComponent,
     BlockDataResourcesComponent,
     HamburgerToggleDirective,
-    EmployeeComponent,
     AdminContactoComponent,
     
   

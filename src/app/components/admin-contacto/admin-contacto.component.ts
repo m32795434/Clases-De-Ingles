@@ -21,4 +21,16 @@ export class AdminContactoComponent implements OnInit {
         },
         err => console.error(err)
       )}
+
+  deleteContacto(_id: string) {
+    if (confirm('Are you sure you want to delete this contacto?')) {
+      this.contactoService.deleteContacto(_id).subscribe(
+        (res) => {
+          this.getContacto();
+          console.log(res);
+        },
+        (err) => console.error(err)
+      );
+    }
+  }
 }
