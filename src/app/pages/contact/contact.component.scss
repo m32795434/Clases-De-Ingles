@@ -1,113 +1,123 @@
 /*---------------------------CONTACT------------------------------------------------*/
-main{
-    margin-bottom: 40px;
+main {
+  margin-bottom: 40px;
 }
-.block-img{
-    background: fixed border-box url(/assets/images/1600/021600.jpg) top 25% left 50%/cover;
-    height: 100%;
-    width: 100%;
-        @media (max-width: 3840px) {
-            background: fixed border-box url(/assets/images/3840/023840.jpg) top 25% left 50%/cover;
-            max-width: 1920px;
-        }
-        @media (max-width: 1920px) {
-            background: fixed border-box url(/assets/images/1920/021920.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 1600px) {
-            background: fixed border-box url(/assets/images/1600/021600.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 1280px) {
-            background: fixed border-box url(/assets/images/1280/021280.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 1023px) {
-            background: fixed border-box url(/assets/images/1023/021023.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 900px) {
-            background: fixed border-box url(/assets/images/900/02900.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 767px) {
-            background: fixed border-box url(/assets/images/767/02767.jpg) top 25% left 50%/cover;
-        }
-        @media (max-width: 370px) {
-            background: fixed border-box url(/assets/images/370/02370.jpg);
-        }
+.block-img {
+  background: fixed border-box url(/assets/images/1600/021600.jpg) top 25% left
+    50% / cover;
+  height: 100%;
+  width: 100%;
+  @media (max-width: 3840px) {
+    background: fixed border-box url(/assets/images/3840/023840.jpg) top 25%
+      left 50% / cover;
+    max-width: 1920px;
+  }
+  @media (max-width: 1920px) {
+    background: fixed border-box url(/assets/images/1920/021920.jpg) top 25%
+      left 50% / cover;
+  }
+  @media (max-width: 1600px) {
+    background: fixed border-box url(/assets/images/1600/021600.jpg) top 25%
+      left 50% / cover;
+  }
+  @media (max-width: 1280px) {
+    background: fixed border-box url(/assets/images/1280/021280.jpg) top 25%
+      left 50% / cover;
+  }
+  @media (max-width: 1023px) {
+    background: fixed border-box url(/assets/images/1023/021023.jpg) top 25%
+      left 50% / cover;
+  }
+  @media (max-width: 900px) {
+    background: fixed border-box url(/assets/images/900/02900.jpg) top 25% left
+      50% / cover;
+  }
+  @media (max-width: 767px) {
+    background: fixed border-box url(/assets/images/767/02767.jpg) top 25% left
+      50% / cover;
+  }
+  @media (max-width: 370px) {
+    background: fixed border-box url(/assets/images/370/02370.jpg);
+  }
 }
 .contact-container {
+  color: white;
+  padding: 5vw;
+  font-size: 30px;
+
+  & h2 {
+    background: radial-gradient(#a8021b, #b53207, #bf1a08, #bf087f, #a707b5);
+    filter: grayscale(50%);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 20px;
+    text-align: center;
     color: white;
-    padding: 5vw;
-    font-size: 30px;
-    
-        & h2{
-        background: radial-gradient(#A8021B, #B53207,#BF1A08,#BF087F,#A707B5);
-        filter: grayscale(50%);
-        border-top: 3px solid white;
-        border-bottom:3px solid white;
-        border-radius: 20px;
-        text-align: center;
-        color: white;
-        font-size: 45px;
-        text-shadow: 3px 5px 4px black;/* offset-x | offset-y | blur-radius | color */
-            @media (max-width: 370px) {
-                font-size: 32px;
-                border-radius: 39px;
-                }
-        }
-        & form{
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 900px) {
-            font-size: 20px;
-        }
-        @media (max-width: 370px) {
-        padding: 1vw;
-        }
-
+    font-size: 45px;
+    text-shadow: 3px 5px 4px black; /* offset-x | offset-y | blur-radius | color */
+    @media (max-width: 370px) {
+      font-size: 32px;
+      border-radius: 39px;
+    }
+  }
+  & form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+  @media (max-width: 370px) {
+    padding: 1vw;
+  }
 }
 
-.contact-items{
-    display: block;
-    margin-bottom: 2.5vw;
-    border-radius: 1vw;
-    height: 30px;
+.contact-items {
+  display: block;
+  margin-bottom: 2.5vw;
+  border-radius: 1vw;
+  height: 30px;
 }
-#box-comment{
-    width: 50vw;
-    height: 15vw;
-    min-width: 190px;
+#box-comment {
+  width: 50vw;
+  height: 15vw;
+  min-width: 190px;
+}
+#email:valid {
+  background-color: rgb(198, 243, 129);
 }
 
-.contact-large{
-    width: 50vw;
-    min-width: 190px;
+.contact-large {
+  width: 50vw;
+  min-width: 190px;
 }
-.buttoms-contact{
-    border-radius: 10px;
-    background-color: var(--azul);
-    color: white;
-    font-size: 25px;
-    display: inline-block;
-    border: 3px solid white;
-        &:hover{
-        background: radial-gradient(circle, #00b4ff 50%, #050c0f 100%);
-        }
-        @media (max-width: 370px) {
-            font-size: 18px;
-            }
+.buttoms-contact {
+  border-radius: 10px;
+  background-color: var(--azul);
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+  border: 3px solid white;
+  &:hover {
+    background: radial-gradient(circle, #00b4ff 50%, #050c0f 100%);
+  }
+  @media (max-width: 370px) {
+    font-size: 18px;
+  }
 }
-.click-box{
-background-color: rgba(0, 0, 0, 0.7);
-text-align: center;
-border-radius: 30px;
-padding: 10px;
+.click-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
 
-    & a{
+  & a {
     text-decoration: none;
     color: white;
-        &:hover{
-        text-decoration: underline white;
-        }
+    &:hover {
+      text-decoration: underline white;
     }
+  }
 }

@@ -9,6 +9,7 @@ export class ResourcesService {
   constructor(
     private http: HttpClient
   ) { }
+  //relative URL path/resource.
   fetchUrl = '/assets/resources.json';
   getResources () {
     

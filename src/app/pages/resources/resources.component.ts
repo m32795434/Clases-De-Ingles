@@ -16,14 +16,14 @@ export class ResourcesComponent implements OnInit {
   
 
 
-recursos : any;
+recursos! : any;
 showResources () {
   this.resourcesService.getResources()
-  .subscribe((data: any)=>{
-    
-    this.recursos = data;
-  });
-}
+  .subscribe(
+    (res) => {
+      this.recursos = res;
+    }
+  ) };
 
 ngOnInit(): void {
   this.showResources();

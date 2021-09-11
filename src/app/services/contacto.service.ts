@@ -23,13 +23,14 @@ export class ContactoService {
   
     constructor(private http:HttpClient ) { }
   
-    getContacto() {
-      return this.http.get<Contacto[]>(this.URL_API);
-    }
+  getContacto() {
+    return this.http.get<Contacto[]>(this.URL_API);
+  }
   
-    createContacto(contacto: Contacto) {
+  createContacto(contacto: Contacto) {
   return this.http.post(this.URL_API, contacto);
   }
+  
   deleteContacto(_id: string) {
     // delete http://localhost:3000/api/contacto/_id
     return this.http.delete(`${this.URL_API}/${_id}`);

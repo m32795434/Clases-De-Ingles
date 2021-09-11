@@ -1,24 +1,19 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-$hamburger-layer-color         : white !default;
-@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$hamburger-layer-color: white !default;
+@import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 :root {
-   
-    --cielo:#ACC8E5;
-    --verde:#79E089;
-    --rosa:#DDC4C4;
-    --azul:#093048;
-    --rojo: #a8011b;
-    --gris:#bebebe;
- 
- }
- body{
-    background-color:#06415C;
-      @media (max-width: 576px){
-         margin:0;
-         padding:0;
+  --cielo: #acc8e5;
+  --verde: #79e089;
+  --rosa: #ddc4c4;
+  --azul: #093048;
+  --rojo: #a8011b;
+  --gris: #bebebe;
+}
+body {
+  background-color: #06415c;
+  @media (max-width: 576px) {
+    margin: 0;
+    padding: 0;
   }
-    
- }
- 
+}
