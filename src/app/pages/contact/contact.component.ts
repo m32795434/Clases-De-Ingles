@@ -13,12 +13,15 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   addContacto(form: NgForm) {
-    this.contactoService.createContacto(form.value).subscribe(
-      (res) => {
-        console.log(res);
-        form.reset();
-      },
-      (err) => console.error(err)
-    );
+    if (confirm('¿Estas seguro de enviar el mensaje?')) {
+      this.contactoService.createContacto(form.value).subscribe(
+        (res) => {
+          alert('¡ENVIADO!');
+          console.log(res);
+          form.reset();
+        },
+        (err) => console.error(err)
+      );
+    }
   }
 }
